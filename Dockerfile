@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM alpine
 
 RUN apt-get update 
 RUN apt-get install -y vim nginx default-mysql-server php-fpm php-mbstring php-mysql wordpress
