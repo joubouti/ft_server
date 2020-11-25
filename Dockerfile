@@ -6,7 +6,6 @@ RUN rm /etc/nginx/sites-enabled/default
 COPY srcs/nginx-wordpress.conf /etc/nginx/conf.d/
 RUN chmod +x /usr/share/doc/wordpress/examples/setup-mysql
 
-
 COPY srcs/.bashrc /root/
 COPY srcs/phpMyAdmin-4.9.2-all-languages.tar.gz /usr/share/wordpress
 RUN cd /usr/share/wordpress && tar xf phpMyAdmin-4.9.2-all-languages.tar.gz && rm phpMyAdmin-4.9.2-all-languages.tar.gz && mv phpMyAdmin-4.9.2-all-languages phpmyadmin
